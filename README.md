@@ -13,4 +13,6 @@ The online platform i.e, Shadi Rentals is a web based Application that is propos
     Order Invoice
     Email Notifications etc.
 
+
+  Technologies used : MERN STACK
    
