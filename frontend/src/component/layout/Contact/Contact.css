@@ -1,0 +1,32 @@
+
+.contactContainer {
+  background-image: url("../../../images/cover2.jpg");
+    background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  /* display: grid;
+  place-items: center; */
+  position: fixed;
+}
+
+.trybtn>button{
+    border: 2px solid #3b0808;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #3b0808 ;
+    color: #f5b921;
+    font-weight: 1000;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    left: 40px;
+
+       
+}
+
+.trybtn>button:hover {
+      color:#3b0808;
+    }
+

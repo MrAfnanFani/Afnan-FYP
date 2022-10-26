@@ -1,0 +1,67 @@
+/* .loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  place-items: center;
+  max-width: 100%;
+}
+
+.loading img {
+  height: 120px;
+  width: 120px;
+  animation: spinlogo 1.5s linear infinite;
+}
+.loading > div {
+  width: 5vmax;
+  height: 5vmax;
+  border-bottom: 10px dotted rgba(226, 173, 26, 0.719);
+
+  border-radius: 50%;
+
+  animation: loadingRotate 1.5s linear infinite;
+}
+
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(-360deg);
+  }
+} */
+
+.loaders {
+  /* border: 6px solid #f3f3f3; */
+
+  border-top: 6px dotted #e4a725;
+
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 250px auto;
+  animation: spinloader 3s linear infinite;
+}
+
+.loaders img {
+  height: 100px;
+  width: 100px;
+  margin: 60px auto;
+  animation: spinlogo 3s linear infinite;
+}
+
+@keyframes spinloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinlogo {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

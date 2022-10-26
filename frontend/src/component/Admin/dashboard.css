@@ -1,0 +1,118 @@
+.dashboard {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  position: absolute;
+}
+
+.dashboardContainer {
+  border-left: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 0;
+}
+
+.dashboardContainer>h1 {
+  color: rgba(255, 174, 0, 0.733);
+  font: 600 2.3rem "Verdana";
+  text-align: center;
+  width: 60%;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+/* .dashboardContainer>h1>img{
+  height:50px;
+  width:50px;
+} */
+.dashboardSummary {
+  margin: 2rem 0;
+}
+
+.dashboardSummary>div {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+.dashboardSummary>div>p {
+  /* background-color: #3b0808; */
+  color: #f5b921;
+  border: 4px solid #ffae19;
+  background-color: #470404;
+  background-image: linear-gradient(315deg, #4b0707 70%, #ffae19 70%);
+  font: 900 1.3rem "verdana";
+  text-align: right;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 2rem;
+  border-radius: 10px;
+
+}
+
+.dashboardSummaryBox2>a {
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #fc575e 10%, #90d5ec 74%);
+  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
+  text-align: right;
+  text-decoration: none;
+  padding: 1.3rem;
+  width: 17vmax;
+  height: 10vmax;
+  margin: 1.7rem;
+  border-radius: 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.dashboardSummaryBox2>a:first-child {
+  background-color: #5de6de;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b572db 74%);
+}
+
+/* rgb(255, 111, 118) */
+
+.dashboardSummaryBox2>a:last-child {
+  background-color: #fce043;
+  background-image: linear-gradient(315deg, #fce043 0%, #fc575e 74%);
+  color: rgb(255, 255, 255);
+}
+
+.dashboardSummaryBox2>a:Hover{
+transform: scale(1.1);
+}
+.lineChart {
+  width: 80%;
+  margin: auto;
+}
+
+.doughnutChart {
+  width: 30vmax;
+  margin: auto;
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardContainer {
+    border-left: none;
+  }
+
+  .dashboardSummary>div>p {
+    margin: 0;
+  }
+
+  .dashboardSummaryBox2>a {
+    padding: 0.5rem;
+    margin: 1rem;
+    font: 300 0.9rem "Roboto";
+  }
+}
